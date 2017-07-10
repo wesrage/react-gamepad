@@ -8,10 +8,7 @@ import './index.html';
 
 const component = (
    <Provider>
-      <div>
-         <GamepadLogger />
-         <GamepadLogger />
-      </div>
+      <GamepadLogger />
    </Provider>
 );
 
