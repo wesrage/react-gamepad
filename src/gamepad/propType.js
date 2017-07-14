@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export default PropTypes.arrayOf(
    PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
       axes: PropTypes.arrayOf(
          PropTypes.shape({
             id: PropTypes.number.isRequired,

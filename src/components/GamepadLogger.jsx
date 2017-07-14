@@ -23,7 +23,12 @@ class GamepadLogger extends React.Component {
                <ul>
                   {gamepad.buttons.map(button =>
                      <li key={button.id}>
-                        {button.id}: {button.value}
+                        <span>
+                           {button.id}: {button.value}
+                        </span>
+                        &nbsp;
+                        {button.triggered && <span>(triggered)</span>}
+                        {button.released && <span>(released)</span>}
                      </li>,
                   )}
                </ul>}
